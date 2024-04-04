@@ -1,4 +1,5 @@
 import "normalize.css";
+import "./style.css";
 
 document.querySelector("#app").innerHTML = `
   <section class="container">
@@ -14,7 +15,7 @@ document.querySelector("#app").innerHTML = `
       </div>
     </nav>
     <main>
-      <h1>Diseña tu <strong>Super Heroe!</strong></h1>
+      <h1>Diseña tu <br> <strong>Super Heroe!</strong></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum. Iure omnis veritatis recusandae quo ducimus facere quisquam ratione placeat illo doloremque? Veritatis ratione pariatur tempore mollitia quae, nesciunt nostrum.</p>
     </main>
     <aside>
