@@ -1,5 +1,13 @@
+:root {
+	--principal-color: #ffd500;
+	--secondary-color: #d11013;
+	--tertiary-color: #0070c0;
+	--font: "Lato";
+}
+
 * {
 	box-sizing: content-box;
+	font-family: var(--font), sans-serif;
 }
 body {
 	height: 100vh;
@@ -10,8 +18,17 @@ body {
 	height: 100vh;
 }
 .container {
+	height: 100%;
+	width: 100%;
 	position: relative;
 	z-index: 1;
+	display: grid;
+	grid-template-columns: 55% 45%;
+	grid-template-rows: 20% 50% 30%;
+	grid-template-areas:
+		"nav aside"
+		"article aside"
+		"footer aside";
 }
 .loader {
 	position: absolute;
