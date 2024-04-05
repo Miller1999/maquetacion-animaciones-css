@@ -36,7 +36,7 @@ body {
 		display: flex;
 		align-items: center;
 		width: 100%;
-		padding: 2rem;
+		padding: 2rem 5rem;
 		animation: navbar 0.5s ease-in-out 2s forwards;
 		&& img {
 			width: 50px;
@@ -55,6 +55,27 @@ body {
 				}
 			}
 		}
+	}
+}
+main {
+	grid-area: article;
+	padding: 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	animation: main 0.5s ease-in-out 2s;
+	&& h1 {
+		text-indent: 1.5rem;
+		font-weight: 300;
+		font-size: 2.3rem;
+		&& strong {
+			font-weight: 700;
+		}
+	}
+	&& p {
+		margin: 0;
+		font-weight: 300;
+		line-height: 1.5rem;
+		width: 70%;
 	}
 }
 .loader {
@@ -115,6 +136,14 @@ body {
 @keyframes navbar {
 	0% {
 		transform: translateY(-200px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+@keyframes main {
+	0% {
+		transform: translateY(-600px);
 	}
 	100% {
 		transform: translateY(0px);
