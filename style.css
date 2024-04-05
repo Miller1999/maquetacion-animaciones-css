@@ -104,6 +104,37 @@ aside {
 		grid-row: 1/2;
 	}
 }
+footer {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-evenly;
+	background-color: var(--principal-color);
+	border-radius: 0 80px 0 0;
+	animation: footer 0.5s ease-in-out 2.5s forwards;
+	&& div {
+		background-color: var(--tertiary-color);
+		display: flex;
+		justify-content: center;
+		width: 130px;
+		height: 50%;
+		border-radius: 20px 20px 0px 0px;
+		&& img {
+			width: 130px;
+			position: absolute;
+			bottom: 1rem;
+			transform: translateY(0px) scale(1);
+			transition: transform 0.4s ease-in-out;
+		}
+	}
+	&& div:hover {
+		&& img {
+			cursor: pointer;
+			transform: translateY(-20px) scale(1.1);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
+}
+
 .loader {
 	position: absolute;
 	top: 0;
@@ -189,5 +220,13 @@ aside {
 	}
 	100% {
 		transform: translateX(0px);
+	}
+}
+@keyframes footer {
+	0% {
+		transform: translateY(500px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
