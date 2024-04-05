@@ -5,7 +5,7 @@ document.querySelector("#app").innerHTML = `
   <section class="container">
     <nav class="navbar">
       <div class="navbar__content">
-      <img/>
+      <img src="https://tiendalego.com.co/cdn/shop/files/LEGO-Logo_88x88_cf5cb234-fd96-44e1-9130-2fcf3bea77af_53x53.png?v=1649179371" alt="logo"/>
         <ul>
           <li><a href="#">Exclusivos</a></li>
           <li><a href="#">Nuevos</a></li>
