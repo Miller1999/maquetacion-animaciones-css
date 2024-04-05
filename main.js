@@ -19,9 +19,9 @@ document.querySelector("#app").innerHTML = `
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, harum. Iure omnis veritatis recusandae quo ducimus facere quisquam ratione placeat illo doloremque? Veritatis ratione pariatur tempore mollitia quae, nesciunt nostrum.</p>
     </main>
     <aside>
-      <p>SuperMan</p>
-      <img/>
       <div></div>
+      <p>SuperMan</p>
+      <img src="https://i.ibb.co/x16pz1x/super-man.png" alt="Superman"/>
     </aside>
     <footer>
       <div>
